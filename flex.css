@@ -1,0 +1,135 @@
+* {
+	box-sizing: border-box; 
+	/*doesn't change anything */
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    margin-left: 20px;
+    background-color: #eee;
+    /*min-width: 600px;*/
+}
+
+article,aside,footer,header,main,section {
+    display: block
+}
+
+a {
+    background-color: transparent
+}
+
+aside {
+  float: right;
+  background-color: #fff;
+  width: 300px;
+  padding: 20px;
+  text-align: right;
+}
+
+input {
+    line-height: normal
+}
+
+input[type="search"] {
+    box-sizing: border-box;
+}
+
+img {
+    border: 0
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto
+}
+
+.main-container {
+    float: left;
+    width: calc(100% - 320px);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.article {
+  width: 310px;
+  background-color: white;
+  
+}
+
+.clearfix:before,.clearfix:after {
+    content: " ";
+    display: inline-block;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+@media(min-width: 768px) {
+    .search-width {
+        width:50%;
+        float: right
+    }
+}
+
+@media(max-width: 767px) {
+    .category-item {
+        margin-bottom:40px
+    }
+}
+
+.newsletter-block {
+    padding: 15px 20px;
+    background-color: #004e98;
+    color: #fff;
+    padding-bottom: 0;
+    margin-top: 15px;
+    padding: 15px
+}
+
+
+section .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px
+}
+
+aside .sidebar-block {
+    text-align: center;
+    margin-top: 15px;
+    border-bottom: 3px solid #f1f1f1;
+    color: #2f2f2f;
+    display: block;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+aside .sidebar-box-content p {
+    text-align: left;
+    margin-top: 15px
+}
+
+footer {
+    display: block;
+    line-height: 1.42857143;
+    color: #fff;
+    background-color: #000;
+    max-height: 120px;
+    float: left;
+    width: 100%;
+    margin-bottom: -10px;
+}
